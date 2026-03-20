@@ -1,12 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto2</title>
+    <title>THE CURATOR | Relojería de Lujo</title>
+    <!-- Enlace al archivo de estilos externo -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Fuentes elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>Mi nombre es Javier Urrego</h1>
-    
+
+    <!-- Header / Barra de Navegación -->
+    <header class="main-header">
+        <div class="header-container">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">THE CURATOR</div>
+            <div class="header-actions">
+                <span class="material-icons">shopping_bag</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">ESTABLECIDO 1892</p>
+            <h1>Domina Tu Tiempo</h1>
+            <div class="hero-buttons">
+                <a href="#catalogo" class="btn btn-primary">Explorar Colecciones</a>
+                <a href="#historia" class="btn btn-secondary">Ver Herencia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <main id="catalogo" class="catalog-section">
+        <div class="section-header">
+            <p class="label">Selección Exquisita</p>
+            <h2>Colecciones Destacadas</h2>
+        </div>
+
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="The Celestial Perpetual">
+                </div>
+                <div class="product-info">
+                    <div class="info-top">
+                        <h3>The Celestial Perpetual</h3>
+                        <span class="price">$42,500</span>
+                    </div>
+                    <p class="description">Gran Complicación</p>
+                    <button class="btn-buy">Comprar Ahora</button>
+                </div>
+            </article>
+            <!-- Añadir más productos aquí -->
+        </div>
+    </main>
+
+    <!-- Formulario de Pedido -->
+    <section id="pedido" class="order-section">
+        <div class="order-container">
+            <h2>Detalles del Pedido</h2>
+            <form action="#" class="order-form">
+                <div class="form-group">
+                    <label>01. Selección</label>
+                    <select required>
+                        <option value="" disabled selected>Selecciona un Modelo</option>
+                        <option value="celestial">The Celestial Perpetual</option>
+                        <option value="oceanic">Oceanic Deep Sea</option>
+                        <option value="heritage">Heritage 1924</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>02. Información Personal</label>
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <input type="tel" placeholder="Número de Teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label>03. Dirección de Envío</label>
+                    <input type="text" placeholder="Dirección" required>
+                    <div class="row">
+                        <input type="text" placeholder="Ciudad" required>
+                        <input type="text" placeholder="Estado" required>
+                    </div>
+                    <input type="text" placeholder="Código Postal" required>
+                </div>
+
+                <button type="submit" class="btn-confirm">Confirmar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">THE CURATOR</div>
+                <p>Definiendo la intersección de la herencia horológica y la precisión estética moderna.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Boutique</h4>
+                <ul>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Mantenimiento</a></li>
+                    <li><a href="#">Servicios Bespoke</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Logística</h4>
+                <ul>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 THE CURATOR. PRECISIÓN ATEMPORAL.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
