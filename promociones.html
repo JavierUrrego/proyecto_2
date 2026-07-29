@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Promociones | THE CURATOR - CRONÓMETRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@200;300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="estilos.css" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#393939",
+                    "tertiary-fixed": "#dbe1ff",
+                    "on-tertiary-container": "#254188",
+                    "tertiary": "#bfcdff",
+                    "outline-variant": "#4d4635",
+                    "secondary": "#c8c6c5",
+                    "on-primary-fixed-variant": "#574500",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-primary": "#735c00",
+                    "tertiary-container": "#97b0ff",
+                    "background": "#131313",
+                    "primary-fixed": "#ffe088",
+                    "on-primary-container": "#554300",
+                    "primary": "#f2ca50",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#e9c349",
+                    "surface-dim": "#131313",
+                    "surface": "#131313",
+                    "on-primary-fixed": "#241a00",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-primary": "#3c2f00",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "primary-container": "#d4af37",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "secondary-container": "#474747",
+                    "on-tertiary": "#082b72",
+                    "on-secondary-container": "#b6b5b4",
+                    "inverse-on-surface": "#313030",
+                    "secondary-fixed": "#e4e2e1",
+                    "on-secondary": "#303030",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-variant": "#353534",
+                    "outline": "#99907c",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-fixed": "#00174b"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "display": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(19, 19, 19, 0.4), rgba(19, 19, 19, 1));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-xl border-b border-white/5" id="top-bar">
+<div class="flex justify-between items-center px-6 md:px-12 py-5 w-full max-w-[1920px] mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer md:hidden">menu</span>
+<a class="text-2xl font-bold tracking-[0.2em] text-primary font-serif" href="index.html">THE CURATOR</a>
+</div>
+<div class="hidden md:flex items-center space-x-10 font-['Noto_Serif'] tracking-[0.1em] uppercase text-sm">
+<a class="text-[#e5e2e1] hover:text-primary transition-all duration-300" href="index.html">INICIO</a>
+<a class="text-[#e5e2e1] hover:text-primary transition-all duration-300" href="historia.html">HISTORIA</a>
+<div class="relative group py-2">
+<button class="text-[#e5e2e1] group-hover:text-primary transition-all duration-300 flex items-center gap-1 uppercase">
+                    COLECCIONES
+                    <span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+<!-- Improved hover behavior with a transparent bridge div or padding -->
+<div class="absolute top-full left-0 w-48 bg-surface-container-high hidden group-hover:block transition-all shadow-2xl pt-2">
+<div class="bg-surface-container-high border border-white/5">
+<a class="block px-6 py-4 text-xs tracking-widest hover:bg-surface-container-highest hover:text-primary transition-colors" href="clasicos.html">CLÁSICOS</a>
+<a class="block px-6 py-4 text-xs tracking-widest hover:bg-surface-container-highest hover:text-primary transition-colors" href="deportivos.html">DEPORTIVOS</a>
+<a class="block px-6 py-4 text-xs tracking-widest hover:bg-surface-container-highest hover:text-primary transition-colors" href="lujo.html">LUJO</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary cursor-pointer active:opacity-80">shopping_bag</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[80vh] md:h-[921px] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0">
+<img alt="Luxury watch movement" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_th3B847aPwVp3oisfsuySZ9Rorl6CJoNHnw21FnITPOujanlv506EBfoxu172GEYKMO_6zN5Pri8ftwcksoOd8kVab8b-aEmsn2ydpX_8oDiq-Sdoit3SZM50v5cgnlCqzXbSrPqRcgoHLoH8R4a0MXlABiTB2CWGqhqyvxFDtEFVut7z0w3S7x3zdu28sJKqC6VVB5YhwAkeZCK4CXf-rVDmhcmVGNEsrQJGTVdDfEGwZfFzuWo"/>
+</div>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<p class="font-label text-primary uppercase tracking-[0.4em] text-xs mb-6 opacity-0 translate-y-4 animate-[fadeInUp_1s_ease-out_forwards]">Experiencias Singulares</p>
+<h1 class="font-display text-5xl md:text-8xl font-bold text-on-surface mb-8 tracking-tight leading-tight">
+            Ofertas <span class="italic text-primary/90 font-light">Exclusivas</span>
+</h1>
+<div class="w-24 h-px bg-primary mx-auto mb-8"></div>
+<p class="font-body text-xl md:text-2xl text-on-surface/80 max-w-2xl mx-auto font-light leading-relaxed">
+            Tiempo de Oportunidad. Descubra piezas magistrales seleccionadas para los paladares más exigentes.
+        </p>
+</div>
+</header>
+<!-- Promotional Section -->
+<main class="relative z-20 py-20 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+<!-- Section Intro -->
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 md:mb-24 gap-8">
+<div class="max-w-xl">
+<h2 class="font-display text-4xl font-light mb-6">La Curaduría de Mayo</h2>
+<p class="font-body text-on-surface/60 leading-relaxed">
+                Nuestra selección mensual de beneficios exclusivos combina el legado de la relojería tradicional con incentivos diseñados para nuevos y veteranos coleccionistas. Sin compromisos, solo excelencia.
+            </p>
+</div>
+<div class="hidden md:block h-px flex-grow bg-outline-variant/30 mx-12 mb-4"></div>
+<div class="font-label text-xs tracking-widest text-primary shrink-0 uppercase border-b border-primary/20 pb-2">
+            Curated Selection v.01
+        </div>
+</div>
+<!-- Promotional Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-y-24 md:gap-x-12">
+<!-- Promo 1: Heritage -->
+<div class="md:col-span-7 group">
+<div class="relative aspect-[4/3] md:h-[500px] overflow-hidden bg-surface-container">
+<img alt="Heritage Collection" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJz2QwkesQVmZR3zAVqDTeA92kaSDF2FzEnM-6QqNONYfdY3VwRyUAeQncQ_q4seqVXKUnPZkndMsBFNUoJCdJ5iu1cFqEPNBBry_ecGvuzLGi9iGI7xjnTHEBHl9eI7ZeZdw9HELy-ReSQoyyPI0AW7YPUb7EyUYFuxuudI5O-3ghuauhjQJREiJ45XHBKsRyxVqGyuxvJn1gbFOA4pIrOTtbksUTlhvTmSZUn04SMiItaZwSu4pj"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500"></div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary border border-primary/40 px-3 py-1">Exclusivo Heritage</span>
+<span class="font-display text-3xl font-bold text-primary">15% OFF</span>
+</div>
+<h3 class="font-display text-3xl mb-4">The Heritage Discount</h3>
+<p class="font-body text-on-surface/60 max-w-lg mb-6 leading-relaxed">
+                    Una invitación para honrar el pasado. Disfrute de un beneficio exclusivo en piezas vintage seleccionadas que narran décadas de precisión y estilo inmutable.
+                </p>
+<button class="bg-primary text-on-primary-fixed px-8 py-4 font-label text-[11px] tracking-widest uppercase hover:bg-primary-container transition-all">Ver Colección</button>
+</div>
+</div>
+<div class="hidden md:block md:col-span-1"></div>
+<!-- Promo 2: Bundle -->
+<div class="md:col-span-4 mt-0 md:mt-24 group">
+<div class="relative aspect-[3/4] md:h-[600px] overflow-hidden bg-surface-container">
+<img alt="Limited Edition Bundle" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCaZEYywvitZxUP4gDC3RJOITAstqnE6DBofElyBeFTcH6YGhKOzK2H1ub4CgUcO7spA-L1PwDixr89AXoQ6iLwrMt1C75H5Hap5uVhCBLaz00lkAu0cY9_5nxfSsYAxr3-y6kM3zxH1dTX7jgdy6vNQba-UNAz0cbMN1AMlq5sDPSJSs3U8EBlk09b0B-YhacGqm8aWJ9XqAsxOe2SS_8zaitbPYwEMePdc7971tnUuQlfoMIOL2t"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<h3 class="font-display text-2xl mb-2 text-on-surface">Limited Edition Bundle</h3>
+<p class="font-body text-sm text-on-surface/80 uppercase tracking-wider">Compensación por Excelencia</p>
+</div>
+</div>
+<div class="mt-6">
+<p class="font-body text-on-surface/60 text-sm leading-relaxed mb-6">
+                    Con la adquisición de cualquier pieza de nuestra línea de Lujo, reciba un set de correas de cuero artesanal hechas a medida.
+                </p>
+<a class="inline-block text-primary text-xs font-label tracking-widest uppercase border-b border-primary/40 pb-1 hover:border-primary transition-all" href="#">Explorar Lujo</a>
+</div>
+</div>
+<!-- Promo 3: Welcome (Wide) -->
+<div class="md:col-span-12 md:flex items-center gap-16 mt-12 bg-surface-container-low p-8 md:p-20">
+<div class="md:w-1/2 mb-8 md:mb-0">
+<div class="overflow-hidden h-[300px] md:h-[400px] bg-surface-container">
+<img alt="New Collector Welcome" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2GmquMDJn8HOm1CNGBdKhFG7HGCYq7zYfrIFDNrbY9GV-Hzf4kgqIY30lQSDy2hU1Zwg9b8d79VgjhZHjM8TVIGePKMub-GWw-8pe6eBVLdoPSvEgKvjuSZ0XZAAhmlV-y5I7lf2g3u5daaPVEh48E0zuMHBenfZQ-CR6oQJK99D_rMWmiEVq1KbhbeRUL_BcHu4Bw4V_GQBoFIq_8izi3UEFHc0ZIlT67iyVAtsVGlcuFpOqVnfN"/>
+</div>
+</div>
+<div class="md:w-1/2">
+<span class="font-label text-xs tracking-widest text-primary uppercase mb-4 block">Welcome Membership</span>
+<h3 class="font-display text-4xl mb-6 leading-tight">New Collector's Welcome</h3>
+<p class="font-body text-on-surface/70 mb-8 leading-relaxed max-w-md">
+                    Inicie su legado con CRONÓMETRO. Los primeros compradores acceden a una estructura de precios preferencial y servicios de mantenimiento complementarios durante el primer año.
+                </p>
+<button class="border border-outline-variant/50 text-on-surface px-10 py-4 font-label text-[11px] tracking-widest uppercase hover:bg-on-surface hover:text-background transition-all">Registrar Interés</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Visual Divider -->
+<section class="py-20">
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-primary/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 md:px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col gap-8">
+<div class="text-3xl font-serif text-[#e5e2e1] tracking-tighter">THE CURATOR</div>
+<p class="font-['Manrope'] text-[11px] tracking-[0.12em] uppercase leading-relaxed text-[#e5e2e1]/40">
+                CRONÓMETRO es el destino definitivo para coleccionistas. Curaduría de tiempo, espacio y herencia.
+            </p>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-label text-xs tracking-[0.2em] text-primary uppercase">Navegación</h4>
+<div class="flex flex-col gap-3 font-['Manrope'] text-[11px] tracking-[0.12em] uppercase text-[#e5e2e1]/60">
+<a class="hover:text-primary transition-all" href="index.html">Inicio</a>
+<a class="hover:text-primary transition-all" href="historia.html">Nuestra Historia</a>
+<a class="hover:text-primary transition-all" href="#">Colecciones</a>
+<a class="text-primary" href="promociones.html">Promociones</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-label text-xs tracking-[0.2em] text-primary uppercase">Legal &amp; Soporte</h4>
+<div class="flex flex-col gap-3 font-['Manrope'] text-[11px] tracking-[0.12em] uppercase text-[#e5e2e1]/60">
+<a class="hover:text-primary transition-all" href="#">Care &amp; Maintenance</a>
+<a class="hover:text-primary transition-all" href="#">Shipping &amp; Concierge</a>
+<a class="hover:text-primary transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-label text-xs tracking-[0.2em] text-primary uppercase">Newsletter</h4>
+<p class="font-['Manrope'] text-[11px] tracking-[0.12em] text-[#e5e2e1]/40 mb-2 uppercase">Reciba actualizaciones sobre piezas raras.</p>
+<div class="flex border-b border-primary/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-[11px] font-label tracking-widest text-on-surface w-full uppercase placeholder:text-on-surface/30" placeholder="SU EMAIL" type="email"/>
+<span class="material-symbols-outlined text-primary cursor-pointer">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-12 py-10 border-t border-primary/5 text-center">
+<p class="font-['Manrope'] text-[10px] tracking-[0.2em] text-[#e5e2e1]/30 uppercase">© 2024 THE CURATOR. TIMELESS PRECISION.</p>
+</div>
+</footer>
+<script>
+    // Scroll effect for top bar
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('top-bar');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-[#131313]');
+            nav.classList.remove('bg-[#131313]/90');
+        } else {
+            nav.classList.remove('bg-[#131313]');
+            nav.classList.add('bg-[#131313]/90');
+        }
+    });
+
+    // Simple fade-in observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('main > div').forEach(el => {
+        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+        observer.observe(el);
+    });
+</script>
+<style>
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</body></html>
