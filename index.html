@@ -72,14 +72,14 @@
         </div>
     </main>
 
-    <!-- Formulario de Pedido -->
+    <!-- Formulario de Pedido - CONECTADO a procesar_pedido.php -->
     <section id="pedido" class="order-section">
         <div class="order-container">
             <h2>Detalles del Pedido</h2>
-            <form action="#" class="order-form">
+            <form action="procesar_pedido.php" method="POST" class="order-form">
                 <div class="form-group">
                     <label>01. Selección</label>
-                    <select required>
+                    <select name="modelo" required>
                         <option value="" disabled selected>Selecciona un Modelo</option>
                         <option value="celestial">The Celestial Perpetual</option>
                         <option value="oceanic">Oceanic Deep Sea</option>
@@ -89,19 +89,19 @@
 
                 <div class="form-group">
                     <label>02. Información Personal</label>
-                    <input type="text" placeholder="Nombre Completo" required>
-                    <input type="email" placeholder="Correo Electrónico" required>
-                    <input type="tel" placeholder="Número de Teléfono" required>
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
                 </div>
 
                 <div class="form-group">
                     <label>03. Dirección de Envío</label>
-                    <input type="text" placeholder="Dirección" required>
+                    <input type="text" name="direccion" placeholder="Dirección" required>
                     <div class="row">
-                        <input type="text" placeholder="Ciudad" required>
-                        <input type="text" placeholder="Estado" required>
+                        <input type="text" name="ciudad" placeholder="Ciudad" required>
+                        <input type="text" name="departamento" placeholder="Departamento" required>
                     </div>
-                    <input type="text" placeholder="Código Postal" required>
+                    <input type="text" name="codigo_postal" placeholder="Código Postal" required>
                 </div>
 
                 <button type="submit" class="btn-confirm">Confirmar Pedido</button>
