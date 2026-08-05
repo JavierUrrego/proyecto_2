@@ -1,0 +1,18 @@
+1- Enlace para abrir el proyecto: 
+
+http://localhost/proyecto_2/index.html
+
+2- Enlace para abrir phpmysql: 
+
+http://localhost/phpmyadmin
+
+3- Comandos git:
+
+cd /c/xampp/htdocs/proyecto_2
+git status
+git add .
+git commit -m "Conectar formulario de pedido con base de datos MySQL y agregar procesamiento PHP"
+git push
+
+
+
