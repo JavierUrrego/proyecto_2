@@ -148,7 +148,7 @@ body {
 /* --- Hero (página de inicio - index.html) --- */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+    background: url('imagenes/index.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +369,7 @@ body {
 /* --- Página Historia (historia.html) --- */
 .history-hero {
     height: 60vh;
-    background-image: url('https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&q=80&w=2000');
+    background-image: url('imagenes/clasico.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -456,7 +456,7 @@ body {
 /* --- Página Promociones (promociones.html) --- */
 .hero-promo {
     height: 60vh;
-    background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+    background: url('imagenes/header.webp') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
